@@ -1,0 +1,113 @@
+/* Glassmorphism utility classes and enhancements */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+}
+.glass-dark {
+  background: rgba(30, 41, 59, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+/* Global styles for FloodSupport app (replaces Tailwind) */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f8fb;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0 0 0.5em 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75em 2em;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: #1e40af;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.flex {
+  display: flex;
+  gap: 1.5em;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-2 { margin-top: 0.5em; }
+.mt-4 { margin-top: 1em; }
+.mt-8 { margin-top: 2em; }
+.mb-2 { margin-bottom: 0.5em; }
+.mb-4 { margin-bottom: 1em; }
+.mb-8 { margin-bottom: 2em; }
+
+.rounded {
+  border-radius: 8px;
+}
+
+.shadow {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+input, select, textarea {
+  font-size: 1rem;
+  padding: 0.75em 1em;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-bottom: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+footer {
+  background: #222;
+  color: #eee;
+  padding: 2em 0;
+  text-align: center;
+  margin-top: 3em;
+}
